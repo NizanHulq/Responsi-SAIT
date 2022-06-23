@@ -1,0 +1,230 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+:root {
+  --main-cream: #f0e3ca;
+  --main-orange: #ff8303;
+  --main-orange-dark: #a35709;
+}
+.roboto-100 {
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
+  }
+  .roboto-300 {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+  }
+  .roboto-400 {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+  }
+  .roboto-500 {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+  }
+  .roboto-700 {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+  }
+  .roboto-900 {
+    font-family: "Roboto", sans-serif;
+    font-weight: 900;
+  }
+  .bg-cream {
+    background-color: var(--main-cream);
+  }
+  .bg-orange {
+    background-color: var(--main-orange);
+  }
+  .bg-orange-dark {
+    background-color: var(--main-orange-dark);
+  }
+  .bg-putih {
+    background-color: white;
+  }
+  .text-cream {
+    color: var(--main-cream);
+  }
+  .text-orange {
+    color: var(--main-orange);
+  }
+  .text-orange-dark {
+    color: var(--main-orange-dark);
+  }
+  .text-black {
+    color: var(--main-black);
+  }
+  .text-putih {
+    color: white;
+  }
+  .daftar {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    color: white;
+  } 
+.hero {
+  position: relative;
+  min-height: 100vh;
+  height: fit-content;
+  /* background-color: aqua; */
+  background-image: url("../assets/sepatu-bg.jpg");
+  background-size: cover;
+}
+
+.hero .text-hero {
+  margin-top: 25%;
+  z-index: 1;
+  color: white;
+}
+
+.about {
+  background-color: var(--main-cream);
+  min-height: 100vh;
+  display: flex;
+  
+}
+
+.about .badge {
+  padding: 1rem 5rem;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 1rem;
+}
+.about .container {
+  margin: auto;
+}
+.menu {
+  background-color: var(--main-orange);
+  color: white;
+  min-height: 100vh;
+}
+.menu .badge {
+  padding: 1rem 5rem;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 1rem;
+}
+.custom-menu {
+  background-color: var(--main-cream);
+  border-radius: 10%;
+  color: black;
+  padding: 2rem 1rem;
+}
+.price {
+  color: var(--main-orange-dark);
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: xx-large;
+}
+
+.contact {
+  min-height: 50vh;
+  background-color: var(--main-orange-dark);
+}
+.contact .badge {
+  margin: 5rem 0 5rem 0;
+  padding: 1rem 5rem;
+  font-size: 1rem;
+}
+.contact-menu {
+  font-family: "roboto",sans-serif;
+  font-weight: 300;
+  font-size: 1rem;
+  color: aliceblue;
+  text-decoration: none;
+}
+.footer {
+  padding-top: 10px;
+  background-color: orange;
+}
+
+.modal-bg {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  position: fixed;
+  top: 0;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 5;
+}
+
+.modal-content{
+  width: 600px;
+  height: 650px;
+  background-color: var(--main-cream);
+  border-radius: 25px;
+  text-align: left;
+  padding: 20px;
+  position: relative;
+}
+
+.close{
+  font-weight: 400;
+  font-size: 40px;
+  position: absolute;
+  top: 0;
+  right: 30px;
+  cursor: pointer;
+}
+
+.modal-content .container{
+  padding: 16px;
+  font-family: "Roboto", sans-serif;
+}
+
+
+input, select {
+width: 100%;
+padding: 15px 8px;
+margin: 5px 0 10px 0;
+display: inline-block;
+border-radius: 10px;
+border: 2px solid orange  ;
+background: white;
+}
+input:hover, select:hover {
+  background-color: gainsboro;
+}
+input:focus, select:focus {
+background-color: gainsboro;
+outline: none;
+}
+.pesan {
+background-color:orange;
+border-radius: 10px;
+color: white;
+padding: 10px 5px;
+margin: 20px 0px;
+border: none;
+cursor: pointer;
+width: 20%;
+}
+.pesan:hover{
+  background-color: rgb(238, 179, 90);
+}
+
+
+@media screen and (max-width: 575px) and (min-width: 436px) {
+  .hero .text-hero {
+    margin-top: 70%;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 767px) and (min-width: 576px) {
+  .hero .text-hero {
+    margin-top: 60%;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 991px) and (min-width: 768px) {
+  .hero .text-hero {
+    margin-top: 45%;
+    text-align: center;
+  }
+}
+@media screen and (min-width: 992px) {
+  .tombol .nav-item {
+    margin-left: 1rem;
+  }
+}
